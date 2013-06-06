@@ -152,7 +152,7 @@ if (!$edit) {
         krsort($letters, SORT_NUMERIC);
 
         $DB->delete_records('grade_letters', array('contextid' => $context->id));
-      
+
         foreach($letters as $boundary=>$letter) {
             $record = new stdClass();
             $record->letter        = $letter;
